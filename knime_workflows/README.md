@@ -1,4 +1,20 @@
 # FfM_Water_Management4Trees
+# Frankfurt Urban Heat Island data prep — KNIME workflow
+
+**The problem**
+Germany's national weather service (DWD) publishes hourly urban heat island data for the whole country in a scientific file format (NetCDF) that most business tools can't read directly. To use this data in a dashboard, it has to be extracted, narrowed down to a specific city, simplified, and converted into a standard format.
+
+**What I built**
+A reusable KNIME workflow that takes the raw DWD file, isolates the area around Frankfurt am Main, calculates a monthly average heat-stress value for each 1 square-kilometre block of the city, and outputs a clean CSV file ready for use in dashboards, maps, or further analysis.
+
+**The result**
+A 411,000-row hourly raster collapsed into ~575 clean rows — one heat-stress value per neighbourhood-sized block of Frankfurt. The output file plugs directly into downstream visualisation tools.
+
+**Why this matters**
+Public climate datasets are a goldmine for sustainability, urban planning, and energy use cases — but most of them sit behind a technical wall. This workflow shows how a low-code ETL tool (KNIME) plus a small scripting bridge can turn a specialist research file into something a business team can actually use, without writing a full application or hiring a data engineer.
+
+**Tools used**
+KNIME Analytics Platform (free desktop edition), Python (for the NetCDF parsing step), DWD open data, GitHub (portfolio hosting).
 
 # DWD Urban Heat Island → Frankfurt UHI Grid (KNIME workflow)
 
