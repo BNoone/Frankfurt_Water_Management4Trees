@@ -6,6 +6,8 @@ This project answers that question by combining tree biology, live weather data,
 
 🔗 **Live app:** [frankfurt-tree-watch.lovable.app](https://frankfurt-tree-watch.lovable.app)
 
+<img width="800" height="434" alt="ScreenRecording2026-06-17at15 36 26-ezgif com-video-to-gif-converter (2)" src="https://github.com/user-attachments/assets/18db701b-f752-4395-b830-c1e9ae01d54f" />
+
 ---
 
 ## The problem
@@ -19,13 +21,6 @@ But irrigation resources are limited, and not all trees are equal:
 - Rain reduces irrigation need, but only some of it actually reaches the roots.
 
 The dashboard below turns Frankfurt's open tree registry into a decision-support tool: for any tree, on any day, how much water does it need, and how much cooling value does that water buy?
-
----
-
-## Demo
-
-<img width="800" height="520" alt="ScreenRecording2026-06-17at15 32 02-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/cd819cf0-327c-4c78-a427-2eec89741d10" />
-
 
 ---
 
