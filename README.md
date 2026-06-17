@@ -11,41 +11,33 @@ This project answers that question by combining tree biology, live weather data,
 ## The problem
 
 Climate adaptation in cities increasingly depends on urban trees for cooling. Trees are effective natual coolers.
-[see one of many LinkedIn posts on this](https://www.linkedin.com/posts/timschumacher_on-this-very-hot-day-a-small-reminder-on-activity-7464632411142746113-bS7q/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACQ0CcABNgihAWULriPVgpQEQYq9GKkJhgI)
+[see one of many LinkedIn posts on this](https://www.linkedin.com/posts/timschumacher_on-this-very-hot-day-a-small-reminder-on-activity-7464632411142746113-bS7q/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACQ0CcABNgihAWULriPVgpQEQYq9GKkJhgI).
 But irrigation resources are limited, and not all trees are equal:
 
 - Some species transpire (and therefore cool) more efficiently than others, relative to how much water they consume.
 - Heat is not evenly distributed across a city — some streets run significantly hotter than others (urban heat island effect).
 - Rain reduces irrigation need, but only some of it actually reaches the roots.
 
-This dashboard turns Frankfurt's open tree registry into a decision-support tool: for any tree, on any day, how much water does it need — and how much cooling value does that water buy?
+This dashboard turns Frankfurt's open tree registry into a decision-support tool: for any tree, on any day, how much water does it need, and how much cooling value does that water buy?
 
 ---
 
-## What it does
+## What this dasboard does
 
-- 📍 Maps all ~130,000 matched Frankfurt street trees, clustered for performance
-- 🌡️ Pulls tomorrow's weather forecast automatically every day
-- 💧 Calculates irrigation need per tree (accounting for species, crown size, heat, humidity, and rainfall)
-- ❄️ Calculates the cooling output of that water (kWh equivalent)
-- ⭐ Scores each tree's structural cooling efficiency (height/crown ratio, species-adjusted)
-- 🌡️ Combines efficiency with local urban heat island intensity into a **cooling priority score**
-- 🗺️ Lets you draw a selection on the map to see aggregate stats for any neighbourhood
-- 🔥 Toggle a heat island overlay to see where the priority trees actually are
+- **Maps** all approx. 130,000 matched **Frankfurt street trees**, clustered for performance
+- **Pulls** tomorrow's **weather forecast** automatically every day
+- **Calculates** **irrigation need** per tree (accounting for species, crown size, heat, humidity, and rainfall)
+- **Calculates** the **cooling output** of that water (kWh equivalent)
+- **Scores** each tree's structural **cooling efficiency** (height/crown ratio, species-adjusted)
+- **Combines** **efficiency** with local urban **heat island intensity** into a **cooling priority score**
+- Toggle a heat island overlay to see where the priority trees actually are
 
 ---
 
 ## Architecture
 
-> *[Architecture diagram from Miro to be inserted here]*
+<img width="9414" height="5204" alt="Untitled" src="https://github.com/user-attachments/assets/b21bb3ef-fdcd-47f1-affc-93e3249de276" />
 
-```
-Frankfurt Baumkataster CSV ─┐
-                             ├─→ Google Sheets ─→ KNIME (enrichment) ─→ trees_enriched.csv ─┐
-DWD HOSTRADA UHI (NetCDF) ──┘                                                                ├─→ Lovable app
-                                                                                              │
-Open-Meteo API ─→ Make.com (daily) ─→ Google Sheets (weather_log) ────────────────────────────┘
-```
 
 ---
 
