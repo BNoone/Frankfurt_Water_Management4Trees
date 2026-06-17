@@ -15,7 +15,7 @@ Climate adaptation in cities increasingly depends on urban trees for cooling. Tr
 But irrigation resources are limited, and not all trees are equal:
 
 - Some species transpire (and therefore cool) more efficiently than others, relative to how much water they consume.
-- Heat is not evenly distributed across a city — some streets run significantly hotter than others (urban heat island effect).
+- Heat is not evenly distributed across a city - some streets run significantly hotter than others (urban heat island effect).
 - Rain reduces irrigation need, but only some of it actually reaches the roots.
 
 This dashboard turns Frankfurt's open tree registry into a decision-support tool: for any tree, on any day, how much water does it need, and how much cooling value does that water buy?
@@ -51,9 +51,9 @@ This dashboard turns Frankfurt's open tree registry into a decision-support tool
 | Data enrichment | KNIME Analytics Platform | Coordinate conversion, spatial join (trees ↔ UHI grid), species lookup, formula calculations |
 | Frontend | Lovable (React + Leaflet) | Map, clustering, weather card, water needs panel, area selection, heat overlay |
 
-### KNIME workflow
+### KNIME workflow for data transformation
 
-![KNIME workflow](knime_workflows/knime_workflow_screenshot.png)
+<img width="1255" height="425" alt="image" src="https://github.com/user-attachments/assets/a39b066d-4e45-4f5e-aec9-07387a590d4d" />
 
 The workflow reads the raw tree CSV and the processed UHI grid, rounds coordinates to enable a spatial join, assigns species-specific water/shade coefficients via Rule Engine nodes, and calculates the final cooling efficiency and priority scores before exporting the enriched dataset.
 
