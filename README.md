@@ -6,13 +6,7 @@ This project answers that question by combining tree biology, live weather data,
 
 🔗 **Live app:** [frankfurt-tree-watch.lovable.app](https://frankfurt-tree-watch.lovable.app)
 
-<img width="800" height="434" alt="ScreenRecording2026-06-17at15 36 26-ezgif com-video-to-gif-converter (2)" src="https://github.com/user-attachments/assets/18db701b-f752-4395-b830-c1e9ae01d54f" />
-
-
 <img width="884" height="480" alt="ScreenRecording2026-06-17at15 36 26-ezgif com-video-to-gif-converter (4)" src="https://github.com/user-attachments/assets/c8f6900d-31e8-4f70-8861-43ac9baa98d9" />
-
-
-
 
 ---
 
