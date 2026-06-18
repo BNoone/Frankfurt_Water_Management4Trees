@@ -33,7 +33,6 @@ The UHI intensity values are derived from the HOSTRADA dataset using Copernicus 
 
 ## Workflow
 
-```
 Python Source (legacy)  ─►  CSV Writer
         │
         └── xarray reads .nc file
@@ -45,7 +44,7 @@ Python Source (legacy)  ─►  CSV Writer
 
 <img width="1255" height="425" alt="image" src="https://github.com/user-attachments/assets/a39b066d-4e45-4f5e-aec9-07387a590d4d" />
 
-```
+
 
 **Nodes:**
 `Python Source (legacy)` reads the NetCDF via `xarray`, applies spatial filter and monthly aggregation.
