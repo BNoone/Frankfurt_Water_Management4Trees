@@ -42,6 +42,7 @@ Python Source (legacy)  ─►  CSV Writer
             → groupby (lat, lon) → mean UHI intensity
             → output ~575 grid cells × 1 mean value
 
+
 <img width="1255" height="425" alt="image" src="https://github.com/user-attachments/assets/a39b066d-4e45-4f5e-aec9-07387a590d4d" />
 
 ```
